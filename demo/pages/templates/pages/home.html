@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'pages/scss/base.scss' %}" type="text/x-scss" /> 
+{% endblock css %}
+
+{% block content %}
+    <h1>Home</h1>
+    <img src="{% static 'img/cat.gif' %}">
+{% endblock %}

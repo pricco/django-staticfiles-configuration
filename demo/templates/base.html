@@ -1,0 +1,20 @@
+<html>
+{% load staticfiles %}
+{% load compress %}
+:q
+:
+<head>
+    <title>Django+Compressor+S3+Cloudfront+Cached+Sass</title>
+    {% compress css %}
+        <link rel="stylesheet" href="{% static 'scss/base.scss' %}" type="text/x-scss" /> 
+        {% block css %}
+        {% endblock %}
+    {% endcompress css %}
+</head>
+<body>
+    {% block content %}
+    {% endblock content %}
+    {% block js %}
+    {% endblock js %}
+</body>
+</html>

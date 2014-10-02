@@ -1,0 +1,5 @@
+Django==1.7
+boto==2.32.1
+sass==2.3
+django-compressor==1.4
+https://github.com/AliLozano/django-storages-py3/tarball/py3
