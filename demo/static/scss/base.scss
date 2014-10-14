@@ -1,6 +1,7 @@
 @import "variables";
 
 html {
-    background: $blue url('../img/cat.gif') 50% 50% fixed;
+    background: $blue url('../img/cat.gif') 50% 50%;
     background-size: cover;
+    text-align: center;
 }

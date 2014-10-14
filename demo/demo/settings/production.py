@@ -19,16 +19,19 @@ CACHES = {
 }
 
 
-STATIC_URL = 'https://d5676rztcqm37.cloudfront.net/static/'
+# STATIC_URL = 'https://d5676rztcqm37.cloudfront.net/static/'
+STATIC_URL = 'https://sophilabs-compressor.s3.amazonaws.com/static/'
 STATIC_BUCKET = 'sophilabs-compressor'
 STATIC_LOCATION = 'static'
-STATIC_DOMAIN = 'd5676rztcqm37.cloudfront.net'
+# STATIC_DOMAIN = 'd5676rztcqm37.cloudfront.net'
+STATIC_DOMAIN = 'sophilabs-compressor.s3.amazonaws.com'
 STATICFILES_STORAGE = 'core.storages.StaticStorage'
 
 COMPRESS_ENABLED = True
-COMPRESS_URL = 'https://d5676rztcqm37.cloudfront.net/static/'
+# COMPRESS_URL = 'https://d5676rztcqm37.cloudfront.net/static/'
+COMPRESS_URL = 'https://sophilabs-compressor.s3.amazonaws.com/static/'
 COMPRESS_ROOT = STATIC_ROOT
-COMPRESS_STORAGE  = 'core.storages.CompressStorage'
+COMPRESS_STORAGE  = 'core.storages.CompressorStorage'
 COMPRESS_CACHE_BACKEND = 'staticfiles'
 COMPRESS_CSS_FILTERS = []
 

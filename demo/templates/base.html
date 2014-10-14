@@ -1,12 +1,12 @@
 <html>
 {% load staticfiles %}
 {% load compress %}
-:q
-:
+
 <head>
-    <title>Django+Compressor+S3+Cloudfront+Cached+Sass</title>
+    <title>django-staticfiles-configuration</title>
     {% compress css %}
-        <link rel="stylesheet" href="{% static 'scss/base.scss' %}" type="text/x-scss" /> 
+        <link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css" />
+        <link rel="stylesheet" href="{% static 'scss/base.scss' %}" type="text/x-scss" />
         {% block css %}
         {% endblock %}
     {% endcompress css %}
@@ -14,6 +14,15 @@
 <body>
     {% block content %}
     {% endblock content %}
+    <p>
+        Bathe private parts with tongue then lick owner's face claw drapes
+        throwup on your pillow. Who's the baby why must they do that make
+        muffins, or have secret plans. Leave fur on owners clothes under
+        the bed, so who's the baby give attitude hunt by meowing loudly
+        at 5am next to human slave food dispenser or give attitude.
+        Cat snacks favor packaging over toy find something else more
+        interesting, or always hungry.
+    </p>
     {% block js %}
     {% endblock js %}
 </body>

@@ -6,7 +6,5 @@ django-staticfiles-configuration
 * S3BotoStorage (S3 + CloudFront)
 * Compressor
 * Sass
-* 
 
-
-* Use `{% load staticfiles %}` instead of `{% load staic %}`
+### Use `{% load staticfiles %}` instead of `{% load staic %}`
